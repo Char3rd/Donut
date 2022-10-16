@@ -15,7 +15,6 @@ z = 400
 light_v = np.array([[1,-1,-1]]) / np.sqrt(3)
 # light_str = [".,", "-~", "-+", "=!", "*#", "$@"]
 light_str = [".,", "-~", "=!", "/%", "*#", "$@"]
-# ".,-~:;=!*#$@"
 
 def get_screen_x (n):
     x = K * n[0][0] // (K + n[2][0] + z)
@@ -59,7 +58,6 @@ def OutPut(n,v):
     os.system ('cls')
     for y in range(0,hight):
         for x in range(0,width):
-            # print (pixel [y][x],end="")
             if pixel [y][x] == 1 and op [y] [x] > 0:
                 print (light_str[op [y] [x] - 1],end="")
             else:
