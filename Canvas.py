@@ -59,7 +59,6 @@ def OutPut(n,v):
     os.system ('cls')
     for y in range(0,hight):
         for x in range(0,width):
-            # print (pixel [y][x],end="")
             if pixel [y][x] == 1 and op [y] [x] > 0:
                 print (light_str[op [y] [x] - 1],end="")
             else:
